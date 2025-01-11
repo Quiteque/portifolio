@@ -1,90 +1,51 @@
-/* Resetando o estilo padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Fundo verde escuro */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #10231f; /* Tom do fundo do CV */
+    font-family: 'Arial', sans-serif;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* Títulos com destaque em verde-limão */
+h1 span {
+    color: #32cd32; /* Verde limão */
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header .profile-img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+.image-container img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    margin-bottom: 20px;
+    border: 5px solid #10231f;
+    transition: transform 0.3s ease;
 }
 
-header h1 {
-    font-size: 2.5em;
+/* Zoom na imagem ao passar o mouse */
+.image-container img:hover {
+    transform: scale(1.1);
 }
 
-header p {
-    font-size: 1.2em;
+/* Links das redes sociais */
+.social-links a {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
-section {
-    padding: 20px 0;
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #32cd32;
 }
 
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.projeto {
-    background: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.projeto h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.projeto p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.projeto a {
-    text-decoration: none;
-    color: #333;
-    background-color: #4CAF50;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.projeto a:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background: #333;
+/* Botões */
+.btn-green-lime {
+    background-color: #32cd32;
+    border: none;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-green-lime:hover {
+    background-color: #28a745; /* Tom ligeiramente mais escuro */
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #10231f;
 }
